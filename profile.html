@@ -1,18 +1,65 @@
+
+
+
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Zana Hoxha | Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a test page.</p>
-    <button id="testButton">Click Me</button>
-    <h2>My name is <i class="zmdi zmdi-android-alt">Zana</i></h2>
-    <h3>I'm 25 years old</h3>
-    <P>I came to the Netherlands to approach my dreams</P>
+    <header class="profile-header">
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a class="active" href="profile.html">Profile</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="index.html">Index</a></li>
+            </ul>
+        </nav>
+        <div class="profile-summary">
+            <img src="zanao.jpg" alt="Portrait of Zana Hoxha" class="profile-pic">
+            <div>
+                <h1 class="pro-h1">Zana Kurd</h1>
+                <p class="subtitle">Student at HZ University of Applied Sciences</p>
+            </div>
+        </div>
+    </header>
+    <main class="profile-main">
+        <section class="profile-info">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:Zana@gmail.com">Zana@gmail.com</a></li>
+                <li><strong>Phone:</strong> <a href="tel:+31612345678">+31 6 12345678</a></li>
+                <li><strong>Location:</strong> Middelburg, The Netherlands</li>
+            </ul>
+        </section>
+        <section class="profile-bio">
+            <h2>About Me</h2>
+            <p class="bio-text">
+                I am a dedicated and passionate student pursuing a degree in Computer Science at HZ University of Applied Sciences. I have a strong interest in web development, programming, and technology. In my free time, I enjoy exploring new technologies, working on personal coding projects, and contributing to open-source communities. I am eager to learn and grow in the field of computer science and look forward to a successful career in the tech industry.
+            </p>
+        </section>
+<!-- ...existing code... -->
+<section class="profile-links">
+    <h2>Useful Links</h2>
+    <ul>
+        <li><a href="https://hz.nl/en/about-hz/regulations-documents" target="_blank" rel="noopener">HZ CER</a></li>
+        <li><a href="https://hz.nl/en/about-hz/regulations-documents" target="_blank" rel="noopener">HZ IR</a></li>
+        <li><a href="https://learn.hz.nl" target="_blank" rel="noopener">HZ Learn</a></li>
+        <li><a href="https://myhz.hz.nl" target="_blank" rel="noopener">MyHZ Progress</a></li>
+        <li><a href="https://github.com/HZ-HBO-ICT" target="_blank" rel="noopener">HZ GitHub</a></li>
+    </ul>
+</section>
+<!-- ...existing code... -->
+    </main>
+    <footer class="profile-footer">
+        <p>&copy; 2025 Zana Kurd. All rights reserved.</p>
+<img src="hz.png" alt="HZ University of Applied Sciences Logo" style="height:40px;">
+    </footer>
 </body>
 </html>
