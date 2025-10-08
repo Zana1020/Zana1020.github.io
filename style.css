@@ -13,22 +13,38 @@ body, h1, h2, h3, p, ul, li {
 
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background: #f6f8fa;
-    color: #222;
     min-height: 100vh;
     line-height: 1.7;
     letter-spacing: 0.01em;
 }
-
+.profile-body{
+    background-image: url(Images/code.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2em;
+    background-position: 0%;
+    
+}
+.profile-body::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.192); /* White overlay with some transparency */
+    z-index: -1; 
+}
 /* Header */
-header {
-    background: #fff;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 2em 0 1em 0;
+.profile-header {
+    background: #000000;
+    border-bottom: 1px solid #e0e0e000;
+    padding: 4em 2em 4em 2em ;
+    margin-bottom: 2em;
     text-align: center;
-    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.725);
-    border-radius: 20px;
-    background: linear-gradient(90deg, #e3f2fd8a 0%, #fff 100%);
+    box-shadow: 0 4px 16px rgba(0, 74, 235, 0);
+    border-radius: 90px;
+    background: linear-gradient(90deg, #e3f2fd44 0%, #ffffff00 100%);
 }
 
 .main-nav ul {
@@ -36,21 +52,22 @@ header {
     display: flex;
     justify-content: center;
     gap: 1.2em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+
 }
 
 .main-nav a {
     text-decoration: none;
-    color: #14508d;
+    color: #57bacc;
     font-weight: 6s00;
     font-size: 1.3em;
     padding: 0.3em 0.8em;
-    border-radius: 4px;
+    border-radius: 90px;
 }
 
 .main-nav a.active,
 .main-nav a:hover {
-    background: #172ad6d5;
+    background: #17a6d6d5;
     border-radius: 20px;
     color: #dddddd;
 }
@@ -63,12 +80,12 @@ header {
     margin-top: 1em;
     text-align: center;
     padding: 1em;
-    background: #f0f4fa;
-    border-radius: 10px;
+    background: #f0f4fa6b;
+    border-radius: 90px;
 }
 .subtitle{
     font-style: italic;
-    color: #710808;
+    color: #0f0cbb;
     font-size: 1em;
     margin-top: -0.3em;
     margin-bottom: 0.5em;
@@ -81,11 +98,11 @@ header {
 }
 .pro-h1{
     padding-bottom: 0.2em;
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 0.2em;
-    color: #1976d2;
+    color: #0bc3e8;
     letter-spacing: 0.02em;
-    font-weight: 700;
+    font-weight: 850;
     text-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
 }
 .pro-h1:hover{
@@ -126,9 +143,9 @@ header {
 .profile-main {
     max-width: 600px;
     margin: 2em auto;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    background: #ffffff27;
+    border-radius: 60px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
     padding: 2em;
 }
 .profile-links{
@@ -140,27 +157,30 @@ header {
 .profile-bio h2,
 .profile-links h2 {
     font-size: 1.15em;
-    color: #1976d2;
+    color: #98d2eb;
     margin-bottom: 0.7em;
     letter-spacing: 0.03em;
     text-shadow: 0 2px 8px rgba(25, 118, 210, 0.673);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    background: linear-gradient(90deg, #bbdefb 0%, #e3f2fd 100%);
+    background: linear-gradient(90deg, #bbc7fb98 0%, #e3f2fda4 100%);
     padding: 0.4em 0.8em;
-    border-radius: 8px;
+    border-radius: 18px;
     box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
     text-align: center;
 }
+
 
 .profile-info ul,
 .profile-links ul {
     list-style: none;
     padding: 0;
-    border-left: 4px solid #002cef64;
-    background: #f9fbfd;
-    border-radius: 8px;
+    color: #c0dbf1;
+    border-left: 4px solid #78bae0b9;
+    border-radius: 9px;
+    font-weight: 850;
+    font-size: 1.3;
     margin-bottom: 1em;
     text-align: center;
 }
@@ -169,15 +189,15 @@ header {
     margin-bottom: 0.6em;
     font-size: 1em;
     padding: 0.7em 1em;
-    background: linear-gradient(90deg, #e3e3fd 0%, #fff 100%);
-    border-radius: 6px;
+    background: linear-gradient(90deg, #e3e3fd5f 0%, #ffffff79 100%);
+    border-radius: 16px;
     box-shadow: 0 1px 4px rgba(25, 118, 210, 0.06);
     transition: background 0.2s, box-shadow 0.2s;
 }
 
 .profile-info a,
 .profile-links  a {
-    color: #1976d2ce;
+    color: #1988d2ce;
     text-decoration: none;
     border-radius: 4px;
     padding: 0.2em 0.5em;
@@ -190,19 +210,29 @@ header {
 .profile-links a:hover {
     background: #e3f2fd;
     color: #0d47a1;
-    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
+    box-shadow: 0 2px 8px rgba(164, 201, 224, 0.1);
 }
 
 .profile-bio p {
-    color: #444;
+    color: rgb(146, 219, 232);
     line-height: 1.6;
+    text-align: center;
+    border-radius: 40px;
     font-size: 1em;
     margin-bottom: 1em;
+    background-color: #f5f7fa50;
+}
+.profile-bio p:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 32px rgba(6, 130, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 20 8px 32px rgba(0, 128, 255, 0.733);
+    border-radius: 40px;
 }
 
 .profile-links {
-    background: #f5f7fa;
-    border: 1px solid #e0e0e0;
+    background: #f5f7fa50;
+    border: 1px solid #e0e0e089;
     border-radius: 8px;
     padding: 1.2em 1em;
     margin-bottom: 2em;
@@ -241,7 +271,8 @@ header {
     margin: 2em auto;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(8, 0, 255, 0.797);
+    box-shadow: 0 2px 8px rgba(107, 171, 211, 0.183);
+    background: linear-gradient(90deg, #bbc7fb85 0%, #e3f2fd67 100%);
     padding: 2em;
     border-radius: 40px;
     text-align: center;
@@ -249,19 +280,19 @@ header {
     color: #333;
     line-height: 1.6;  
 }
-main {
-    background-color: 255, 255, 255, 0.8;
-    border-radius: 18px;
-    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.07);
-    padding: 2em 1.5em;
-    margin: 2em auto;
-    max-width: 700px;
+.index-body nav{
+        background: #fff;
+    padding: 2em 0 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.457);
+    border-radius: 20px;
+    background: linear-gradient(90deg, #e3f2fd8a 0%, #fff 100%);
 }
 .img-1 img, .img-2 img{
     width: 100%;
     max-width: 600px;
     border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(8, 121, 233, 0.879);
+    box-shadow: 0 4px 16px rgba(8, 120, 233, 0.244);
     margin: 2em auto;
     display:block;
 }
@@ -275,27 +306,46 @@ main {
 }
 
 .my-intro{
+    margin-top: 2em;
     margin-bottom: 1em;
     font-size: 1.2em;
     font-weight: 500;   
     color: #18436e;
-    background: linear-gradient(90deg, #e3f2fd 0%, #bbdefb 100%);
-    border-radius: 12px;
+    background: linear-gradient(90deg, #e3f2fd9e 0%, #bbdefb85 100%);
+    border-radius: 50px;
     padding: 0.7em 1.2em;
-    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.151);
 }
 .about-site{
-    font-size: 1em;
+    font-size: 1.2em;
     color: #555;
     font-weight: 400;
-    background: #f0f4fa;
+    background: #f0f4fa79;
+    background: linear-gradient(90deg, #e3f2fd9e 0%, #bbdefb85 100%);
+    margin-bottom: 2em;
     padding: 1em 1.5em;
-    border-radius: 10px;
+    border-radius: 55px;
     box-shadow: 0 2px 8px rgba(25, 118, 210, 0.05);
 }
+.about-site .abt-site{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.about-site:hover{    
+    transform: scale(1.03);
+    box-shadow: 0 8px 32px rgba(6, 130, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 40px;    color: #0056b1ce;
+}
+.my-intro:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 32px rgba(6, 130, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 40px;    color: #0056b1ce;
+}
 .quick-links li{
-    background: #1976d2;
-    color: #fff;
+    background: #63bbd877;
+    color: #ffffff37;
     padding: 5px 10px;
     margin: 10px 0;
     border-radius: 4px;
@@ -323,22 +373,22 @@ main {
 }
 .quick-links{
     font-size: 1.15em;
-    color: #1976d2;
+    color: #1976d279;
     margin-bottom: 0.7em;
     letter-spacing: 0.03em;
     text-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    background: linear-gradient(90deg, #bbdefb 0%, #e3f2fd 100%);
+    background: linear-gradient(90deg, #bbdefb8e 0%, #4dceda95 100%);
     padding: 0.4em 0.8em;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(113, 215, 233, 0.865);
 }
 .quick-links h3{
-    color: #1976d2;
+    color: #cefffb;
     margin-bottom: 0.7em;
-    font-size: 1.3em;
+    font-size: 1.7em;
 }
 .quick-links h3:hover{
     color: #0d47a1;
@@ -346,22 +396,22 @@ main {
 .quick-links ul{
     list-style: none;
     padding: 0;
-    border-left: 4px solid #bbdefb;
-    background: #f9fbfd;
+    border-left: 4px solid #bbdefb89;
+    background: #f9fbfd53;
     border-radius: 8px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 .quick-links li{
     margin-bottom: 0.6em;
     font-size: 1em;
     padding: 0.7em 1em;
-    background: linear-gradient(90deg, #1d80c7 0%, #fff 100%);
+    background: linear-gradient(90deg, #1d80c759 0%, #ffffff36 100%);
     border-radius: 6px;
-    box-shadow: 0 1px 4px rgba(25, 118, 210, 0.06);
+    box-shadow: 0 1px 4px rgba(128, 219, 255, 0.06);
     transition: background 0.2s, box-shadow 0.2s;
 }
 .quick-links a{
-        color: #1976d2;
+        color: #1976d26d;
     text-decoration: none;
     border-radius: 4px;
     padding: 0.2em 0.5em;
@@ -371,7 +421,7 @@ main {
 .index-body {
     background: #e3f2fd;
     font-family: 'Poppins', Arial, sans-serif;  
-    background-image: url(zana123.jpg);
+    background-image: url(Images/index.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -391,7 +441,7 @@ main {
 .dashboard-body {
     background: #e3f2fd;
     font-family: 'Poppins', Arial, sans-serif;  
-    background-image: url(htmlcss.jpg);
+    background-image: url(Images/htmlcss.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -408,12 +458,11 @@ main {
 }
 .dashboard-nav {
     background: #fff;
-    border-bottom: 1px solid #e0e0e0;
     padding: 2em 0 1em 0;
     text-align: center;
     box-shadow: 0 4px 16px rgba(25, 118, 210, 0.697);
     border-radius: 20px;
-    background: linear-gradient(90deg, #e3f2fd 0%, #fff 100%);
+    background: linear-gradient(90deg, #e3f2fd8a 0%, #fff 100%);
 }
 .dashboard-nav ul{
     list-style: none;
@@ -425,7 +474,7 @@ main {
 }
 .dashboard-nav a {
     text-decoration: none;
-    color: #005bb6;
+    color: #52d3e7;
     font-weight: 700;
     padding: 0.3em 1.8em;
     border-radius: 4px;
@@ -434,7 +483,7 @@ main {
 
 .dashboard-nav a.active,
 .dashboard-nav a:hover {
-    background: #1976d2;
+    background: #52d3e7;
     color: #fff;
     box-shadow: 0 4px 16px rgba(25, 118, 210, 0.2);
     border-radius: 20px;
@@ -476,7 +525,7 @@ main {
 }
 .progress .bar .fill {
     position: absolute; left: 0; top: 0; bottom: 0;
-    width: calc((45 / 60) * 100%);
+    width: calc((35/ 60) * 100%);
     background: #067aef;
 }
 .progress .bar .nbsa-mark {
@@ -503,7 +552,7 @@ main {
     
 /* FAQ */   
 .faq-body {
-    background-image: url(7879.jpg);
+    background-image: url(Images/7879.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;   
@@ -520,19 +569,17 @@ main {
 }
 .faq-nav {
     background: #fff;
-
-    border-bottom: 1px solid #e0e0e0;
     padding: 2em 0 1em 0;
     text-align: center;
     box-shadow: 0 4px 16px rgba(25, 118, 210, 0.697);
     border-radius: 20px;
-    background: linear-gradient(90deg, #e3f2fd02 0%, #fff 100%);
+    background: linear-gradient(90deg, #e3f2fd8a 0%, #fff 100%);
 }
 
 .faq-nav a{
     font-size: 1.1em;
     font-weight: 600;   
-    color: #1976d2; 
+    color: #52d3e7; 
     transition: color 0.2s;
     text-decoration: none;
     display: inline-block;
@@ -543,7 +590,7 @@ main {
     display: flex;
     justify-content: center;
     gap:1.2em;
-    margin-top: 50px;
+    margin-top: 15px;
     margin-bottom: 1em;
     padding: 0;
     text-decoration: none;
@@ -561,7 +608,7 @@ main {
     border-radius: 30px;
     padding: 0.3em 1.8em;
     color: #f7f7f7e9;
-    background: #1976d2;
+    background:  #52d3e7;
     box-shadow: 0 4px 16px rgba(25, 118, 210, 0.2);
 }
 .faq {
@@ -662,10 +709,11 @@ main {
 .blog-body {
     background: #e3f2fd;
     font-family: 'Poppins', Arial, sans-serif;
-    background-image: url(blog.png);
+    background-image: url(Images/blog.png);
     background-size: cover;
     background-position: center;
 }
+
 .blog-body::before {
     content: "";
     position: fixed;
@@ -698,16 +746,39 @@ main {
     box-shadow: 20 8px 32px rgba(0, 128, 255, 0.733);
     border-radius: 120px;
 }
-.blog-article p{
-    max-width: 900px;
-    margin: 2em auto;
+.blog-article ol{
+    max-width: 970px;
+    margin: 2em;
     background: #ffffff7e;
-    border-radius: 50px;
-    box-shadow: 0 2px 8px lab(25.17% 64.37 -88.83 / 0.56);
+    border-radius: 80px;
+    box-shadow: 0 2px 8px lab(51.21% -1.29 -46.29 / 0.56);
     padding: 2em;
     text-align: center;
-    line-height: 2rem;
+    line-height: 6rem;
     font-size: 1.3em;
+    display: block;
+}
+.blog-article ol:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 60px;
+}
+.posts-text a{
+    font-size: 1.3em;
+    font-weight: 600;   
+    color: #2385b3; 
+    transition: color 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+.posts-text a:hover{
+        border-radius: 30px;
+    padding: 0.3em 1.8em;
+    color: #f7f7f7e9;
+    background: #1976d2;
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.2);
 }
 .blog-article{
     max-width: 900px;
@@ -719,75 +790,11 @@ main {
     text-align: left;
     line-height: 1.6rem;
 }
-.blog-article h1{
-    text-align: center;
-    font-size: 2em;
-    color: #1976d2be;
-    margin-bottom: 1em;
-    letter-spacing: 0.01em;
-    text-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    background: linear-gradient(90deg, #bbdffb7a 0%, #e3f2fd 100%);
-    padding: 0.4em 0.8em;
-    border-radius: 80px;
-    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.643);
-    display: inline-block;
-    margin-bottom: 0.40em;
-}
-.blog-article h1:hover,h1:active{
+.posts-text a:hover,a:active{
     background: linear-gradient(90deg, #c6bbfba5 0%, #e3f2fd 100%);
-    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.674);
+    box-shadow: 0 2px 8px rgba(210, 25, 139, 0.674);
     color: #0d47a1;
     border-radius: 90px;}
-    .blog-article p{
-        font-size: 1.2em;
-        color: #1935d295;
-        margin-bottom: 0.7em;
-        letter-spacing: 0.03em;
-        font-weight: 600;
-        line-height: 1.8;
-        padding: 1em 1.5em; }
-        .blog-article p:hover{
-            background: #f0f4fa2f;
-            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.539);
-            color: #0d47a1;
-            cursor: pointer;
-        }
-        .date-p{
-            font-size: 1em;
-            color: #555555;
-            font-weight: 400;
-            margin-bottom: 1em;
-            text-align: right;
-        }
-        .skills{
-    max-width: 900px;
-    margin: 2em auto;
-    background: #ffffff7e;
-    border-radius: 50px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.596);
-    padding: 2em;
-    text-align: left;
-    line-height: 1.6rem;
-        }
-        .skills:hover{
-            background: linear-gradient(90deg, #bbdefb 0%, #e3f2fd 100%);
-            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
-            color: #0d47a1;
-        }
-        .skills{
-    font-size: 1.2em;
-    color: #1976d2;
-    margin-bottom: 0.7em;
-    letter-spacing: 0.03em;
-    text-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
-    font-weight: 600;
-}
-.skills{
-    box-shadow: 60px;
-}
 
 /* Status indicators */
 .status-completed{ background: #4caf5075; }   
